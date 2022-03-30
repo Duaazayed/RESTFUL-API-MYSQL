@@ -3,7 +3,7 @@ const express = require('express');
 const Router  = require('express');
 
 const tasksRoutes = express.Router();
-tasksRoutes.get('/', controllers.getALLTasks).post('/', controllers.createTask);
+tasksRoutes.get('/', controllers.getAllTasks).post('/', controllers.createTask);
 
 tasksRoutes.get('/:taskId', controllers.getTask);
 tasksRoutes.put('/:taskId', controllers.updateTask);
